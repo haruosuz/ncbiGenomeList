@@ -1,3 +1,4 @@
+citation()
 
 # set the working directory
 #setwd("~/projects/ncbiGenomeList")

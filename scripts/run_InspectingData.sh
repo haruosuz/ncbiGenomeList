@@ -4,7 +4,9 @@ set -u
 #set -o pipefail
 
     cd data/
+    echo "#######################################################"
     echo "# Inspecting and Manipulating Text Data with Unix Tools"
+    echo "#######################################################"
 
     echo "# Inspecting Data with Head and Tail"
     head -n 2 overview.txt
