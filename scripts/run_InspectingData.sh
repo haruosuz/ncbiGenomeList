@@ -5,7 +5,12 @@ set -u
 
     cd data/
 
-    echo; echo "# Inspecting and Manipulating Text Data with Unix Tools"
+    echo; 
+    echo "  Unix Data Tools. In Bioinformatics Data Skills (pp. 125-174)."
+    echo "  URL http://shop.oreilly.com/product/0636920030157.do"
+    echo; 
+
+    echo "# Inspecting and Manipulating Text Data with Unix Tools"
 
     echo; echo "# Inspecting Data with Head and Tail"
     head -n 2 overview.txt
@@ -29,18 +34,15 @@ set -u
 
     echo; 
     echo "# Using grep, cut, sort, uniq to summarize columns of data"
-    echo "# add the option -v to grep to only return lines that do not match a pattern"
-    echo "# Extracting the column(s) with cut"
+    echo "# Extracting lines that match a pattern using Grep"
+    echo "# Extracting the column(s) with Cut"
     echo "# Sorting Plain-Text Data with Sort"
     echo "# Finding Unique Values in Uniq"
     grep -v "^#" overview.txt | cut -f2 | sort | uniq
-    echo; 
     echo "# Adding the option -c to uniq to show the counts of occurrences next to the unique lines"
     grep -v "^#" overview.txt | cut -f2 | sort | uniq -c
-    echo; 
     echo "# pipe these results to sort -rn to show these counts in order from most frequent to least"
     grep -v "^#" overview.txt | cut -f2 | sort | uniq -c | sort -rn
-    echo; 
     echo "# count multiple columns, e.g. Group,SubGroup (columns 3,4)"
     grep "Eukaryota" overview.txt | cut -f3,4 | sort | uniq -c
 
