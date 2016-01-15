@@ -38,7 +38,7 @@ The shell script `scripts/run.sh` automatically carries out the entire steps: cr
 running the shell script for inspecting data `scripts/run_InspectingData.sh`, and
 running the R script `scripts/my_analysis.R` (generating the output files `analysis/Rplots.pdf` and `analysis/table.csv`).
 
-Let's run the script `scripts/run.sh` in the project's main directory `ncbiGenomeList/` with:
+Let's run the driver script in the project's main directory `ncbiGenomeList/` with:
 
     bash scripts/run.sh > log.txt 2>&1 &
 
