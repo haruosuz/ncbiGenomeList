@@ -37,7 +37,7 @@ Data downloaded on 2015-11-11, 2015-12-09, and 2015-12-29 from <ftp://ftp.ncbi.n
 
 The shell script `scripts/run.sh` automatically carries out the entire steps: creating directories (`data/` and `analysis/`), downloading data files, 
 running the shell script for inspecting data `scripts/run_InspectingData.sh`, and
-running the R script `scripts/my_analysis.R`. This script will generate the output files `analysis/Rplots.pdf` and `analysis/table.csv`.
+running the R script `scripts/my_analysis.R` (generating the output files `analysis/Rplots.pdf` and `analysis/table.csv`).
 
 Let's run the driver script in the project's main directory `ncbiGenomeList/` with:
 
