@@ -5,11 +5,6 @@ set -u
 
     cd data/
 
-    echo; 
-    echo "  Unix Data Tools. In Bioinformatics Data Skills (pp. 125-174)."
-    echo "  URL http://shop.oreilly.com/product/0636920030157.do"
-    echo; 
-
     echo "# Inspecting and Manipulating Text Data with Unix Tools"
 
     echo; echo "# Inspecting Data with Head and Tail"

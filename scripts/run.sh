@@ -12,6 +12,7 @@ bash scripts/run_InspectingData.sh
 
 # Running R script
 Rscript --vanilla scripts/my_analysis.R
+mv Rplots.pdf analysis/
 
 # Print operating system characteristics
 uname -a

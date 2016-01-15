@@ -15,7 +15,6 @@ cat("# Data Summary\n")
 summary(d)
 
 # Exploring Data Visually
-pdf(file="analysis/plot.pdf")
 par(mfcol=c(2,2))
 x <- "Size (Kb)"
 y <- "GC%"
@@ -24,7 +23,6 @@ plot(d[,x], d[,y], xlab = x, ylab = y)
 g <- "Kingdom"
 barplot(table(d[,g]))
 boxplot(d[,y] ~ d[,g], ylab = y)
-dev.off()
 
 # Exporting Data
 write.csv(table(d$Group, d$Kingdom), file="analysis/table.csv")
