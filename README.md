@@ -1,7 +1,7 @@
 ----------
 
 Haruo Suzuki  
-Last Update: 2016-01-08  
+Last Update: 2016-01-15  
 
 ----------
 
@@ -36,11 +36,9 @@ Data downloaded on 2015-11-11 from <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_RE
 
 The shell script `scripts/run.sh` automatically carries out the entire steps: creating directories (`data/` and `analysis/`), downloading data files, 
 running the shell script for inspecting data `scripts/run_InspectingData.sh`, and
-running the R script `scripts/my_analysis.R` (generating the output files `analysis/plot.pdf` and `analysis/table.csv`).
+running the R script `scripts/my_analysis.R` (generating the output files `Rplots.pdf` and `table.csv`).
 
-## Usage
-
-In the project's main directory `ncbiGenomeList/`, we run the shell script `scripts/run.sh` with:
+Let's run this driver script in the project's main directory `ncbiGenomeList/` with:
 
     bash scripts/run.sh > log.txt 2>&1 &
 
