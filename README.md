@@ -23,6 +23,15 @@ Lists of genome sequencing projects for eukaryotes, prokaryotes (archaea and bac
 
 Data were downloaded on 2015-11-11, 2015-12-09, and 2015-12-29 from <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/> into `data/`.
 
+	data/README
+	data/overview.txt
+	data/eukaryotes.txt
+	data/prokaryotes.txt
+	data/prok_reference_genomes.txt
+	data/prok_representative_genomes.txt
+	data/plasmids.txt
+	data/viruses.txt
+
 ## Scripts
 
 	scripts/run.sh
@@ -33,20 +42,11 @@ The shell script `scripts/run.sh` automatically carries out the entire steps: cr
 running the shell script for inspecting data `scripts/run_InspectingData.sh`, and
 running the R script `scripts/my_analysis.R`.
 
-Let's run this script in the project's main directory `ncbiGenomeList/` with:
+Let's run the script `scripts/run.sh` in the project's main directory `ncbiGenomeList/` with:
 
     bash scripts/run.sh > log.txt 2>&1 &
 
 This will generate the following files:
-
-	data/README
-	data/overview.txt
-	data/eukaryotes.txt
-	data/prokaryotes.txt
-	data/prok_reference_genomes.txt
-	data/prok_representative_genomes.txt
-	data/plasmids.txt
-	data/viruses.txt
 
 	analysis/Rplots.pdf
 	analysis/table.csv
