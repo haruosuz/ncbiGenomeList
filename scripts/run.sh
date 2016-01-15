@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Creating directories
-mkdir -p ./{data/$(date +%F),analysis/$(date +%F)}
+mkdir -p ./{data,analysis}
 
 # Downloading data
 wget -nv -P data/ ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/{README,*.txt}
